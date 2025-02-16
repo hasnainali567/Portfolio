@@ -496,17 +496,27 @@ main {
 
 .project{
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  min-height: 80%;
+  height: fit-content;
   background-color: #EBF2FA;
   border-radius: 20px;
+  overflow: hidden;
   cursor: pointer;
+}
+
+.project>img{
+  width: 100%;
 }
 
 .project-info{
   position: absolute;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -521,12 +531,12 @@ main {
   font-size: 2.5rem;
   font-weight: 500;
   padding: 0;
-  color: black;
+  color: white;
 }
 
 .project-info>p{
   font-size: 1.5rem;
-  color: #393939;
+  color: #ffffff;
 }
 
 
