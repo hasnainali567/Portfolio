@@ -1,3 +1,14 @@
+.animate__backInLeft,
+.animate__backInRight,
+.animate__backInUp{
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.animate__backInUp{
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
 @keyframes theme-icon {
     0%{
       transform: scale(0) rotateZ(0deg);
