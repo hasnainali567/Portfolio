@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="animation.css">
 </head>
 
 <body>
@@ -38,16 +38,16 @@
         </div>
         <div class="left-social">
           <div class="social-icons icon-1">
-            <i class="fa-brands fa-github"></i>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
           </div>
           <div class="social-icons icon-2">
-            <i class="fa-brands fa-linkedin-in" style="color: 	#0077B5;"></i>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" style="color: 	#0077B5;"></i></a>
           </div>
           <div class="social-icons icon-3">
-            <i class="fa-brands fa-facebook-f" style="color: #1877F2;"></i>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" style="color: #1877F2;"></i></a>
           </div>
           <div class="social-icons icon-4">
-            <i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i></a>
           </div>
         </div>
         <div class="left-info">
@@ -75,6 +75,11 @@
             </div>
           </div>
           <div class="info-line"></div>
+          <div class="info-btn">
+            <button>
+              Download resume
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -85,7 +90,7 @@
           <i class="fa fa-home" aria-hidden="true"></i>
           <span>Home</span>
         </div>
-        <div class="menu-opt animate__animated animate__bounce animate__backInDown">
+        <div data-target="project" class="menu-opt animate__animated animate__bounce animate__backInDown">
           <i class="fa-solid fa-list-check"></i>
           <span>Work</span>
         </div>
@@ -105,28 +110,72 @@
 
         <div class="about">
           <div class="about-me">
-            <h1>About Me <div class="line"></div></h1>
-            <p>Hey there! Welcome to my portfolio. I am a passionate and dedicated web developer with a keen interest in creating modern, efficient, and user-friendly digital experiences. My journey in the tech world has been an exciting one, filled with continuous learning and exploration of the latest web technologies. I thrive on solving complex problems and crafting seamless designs that bring ideas to life.</p>
+            <h1>About Me <div class="line"></div>
+            </h1>
+            <p>Hey there! Welcome to my portfolio. I am a passionate web developer with a keen interest in creating
+              modern, efficient, and user-friendly websites. My journey in the tech world has been an exciting one,
+              filled with continuous learning and exploration of the latest web technologies. I thrive on solving
+              complex problems and crafting seamless designs that bring ideas to life.</p>
           </div>
           <div class="what-i-do">
             <h2>What I do!</h2>
             <div class="do-box">
               <div class="box">
                 <h3><i class="fa-solid fa-code"></i>Frontend development</h3>
-                <p>I build modern, responsive, and interactive websites using HTML, CSS, and JavaScript. My goal is to create seamless user experiences with clean and efficient code.</p>
+                <p>I build modern, responsive, and interactive websites using HTML, CSS, and JavaScript. My goal is to
+                  create seamless user experiences with clean and efficient code.</p>
               </div>
               <div class="box">
                 <h3><i class="fa-solid fa-mobile"></i>App devlopment</h3>
-                <p>I develop modern, efficient, and user-friendly mobile applications using the latest technologies. My focus is on creating smooth, engaging, and high-performance apps that meet user needs.</p>
+                <p>I develop modern, efficient, and user-friendly mobile applications using the latest technologies. My
+                  focus is on creating smooth, engaging, and high-performance apps that meet user needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-icon">
+            <i class="fa fa-arrow-down animate__animated animate__bounce animate__infinite" aria-hidden="true"></i>
+            <p class=" animate__animated animate__bounce animate__infinite">Scroll</p>
+          </div>
+        </div>
+
+        <div id="project" class="projects projects-div">
+          <h1>Recent Works..</h1>
+          <div class="projects-container">
+            <div class="project">
+              <img src="/images/Screenshot 2025-02-16 150725.png" alt="">
+              <div class="project-info">
+                <h4>Gmail</h4>
+                <p>Clone</p>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-info">
+                <h4>Apple</h4>
+                <p>Clone</p>
+              </div>
+            </div>
+            <div class="project">
+              <a target="_blank" href="saltnpepper-hasnain.netlify.app">
+                <div class="project-info">
+                  <h4>Salt'n Pepper</h4>
+                  <p>Clone</p>
+                </div>
+              </a>
+            </div>
+            <div class="project">
+              <div class="project-info">
+                <h4>Flat ui</h4>
+                <p>Clone</p>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-info">
+                <h4>Sunzine Photo</h4>
+                <p>Clone</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="projects projects-div">
-          <h1>Project</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, facere consequatur repudiandae quaerat corporis, libero, ipsam perspiciatis ullam deleniti sunt id accusamus facilis officia a voluptatum saepe alias beatae quidem pariatur dignissimos commodi placeat inventore necessitatibus est. Dicta quod ut ipsa necessitatibus quas recusandae laborum repellendus rerum, quasi facilis dolore, officia aperiam aliquam ducimus ad id tempora porro! At rem ipsum eius natus laboriosam et ex nam, commodi molestias, laudantium eveniet soluta quibusdam, iste aspernatur. Itaque tempora blanditiis laborum placeat dolorum optio a possimus repellat assumenda quidem, quis cupiditate alias amet fugiat, ipsum tempore. Voluptatibus, vitae! Distinctio aliquid magni hic vel praesentium dolores dignissimos eligendi libero corrupti, culpa vitae voluptatem rerum deserunt nemo nihil officiis totam quas exercitationem quibusdam voluptatum, error deleniti minima mollitia aspernatur. Deserunt, dolorum ducimus voluptas harum aliquam, quod cumque nam eveniet perspiciatis, autem sint ipsum maiores suscipit nemo? Porro, doloribus exercitationem. Saepe illo qui, autem fuga numquam dolorum pariatur, iure officiis molestiae voluptas quibusdam dolores asperiores nam vero eaque eum possimus, et tempore sint quam blanditiis itaque repudiandae! Aliquid accusamus eaque enim consequuntur odio quidem, iste atque architecto sapiente non, eum repudiandae reprehenderit beatae quaerat quia aut ab assumenda quae. Dolorem, vitae? Quis nihil numquam rem?</p>
-        </div>        
       </div>
 
 
