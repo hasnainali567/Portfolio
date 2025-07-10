@@ -1,0 +1,128 @@
+.main-container {
+  padding: 0 50px 50px;
+  .title {
+    padding: 79px 50px 61px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+      font-family: "PP Editorial New Regular";
+      font-size: 75px;
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 108px;
+      word-wrap: nowrap !important;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: Manrope;
+      font-weight: 500;
+      line-height: 22px;
+      color: rgb(92, 92, 92);
+      max-width: 600px;
+    }
+  }
+
+  .selected-work {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+    .title {
+      padding: 15px 0;
+      color: rgb(101, 101, 101);
+      letter-spacing: -0.2px;
+      font-weight: 500;
+      font-size: 14px;
+      border-bottom: 1px solid rgb(216, 216, 216);
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 30px;
+      .card {
+        display: flex;
+        width: 49%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    padding: 0 20px 40px;
+    .title {
+        padding: 76px 24px 48px 10px;
+        gap: 5px;
+      h1 {
+        font-size: 45px;
+      }
+
+      p {
+        max-width: 340px;
+        line-height: 22px;
+      }
+    }
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 100% !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+    .main-container{
+        .title {
+            p{
+                font-size: 16px;
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container{
+        .title {
+            gap: 0;
+            h1 {
+                font-size: 40px;
+                word-wrap: nowrap;
+                min-width: 310px;
+            }
+            p{
+                font-size: 14px;
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container{
+        padding: 0 10px 30px;
+        .title {
+            padding-top: 40px;
+            gap: 0;
+            h1 {
+                font-size: 40px;
+                word-wrap: nowrap;
+                min-width: 310px;
+            }
+            p{
+                font-size: 14px;
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+
+
