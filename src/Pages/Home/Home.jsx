@@ -41,7 +41,7 @@ const Home = () => {
           />
           <Card
             src={Hb_mart_Image}
-            link={"hb-mart.netlify.app"}
+            link={"https://hb-mart.netlify.app"}
             title={"E-commerce App with Cart"}
             year={"2025"}
           />
